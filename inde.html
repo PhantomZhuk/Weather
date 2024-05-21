@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="icon" type="image/png" href="./img/845-8451388_sunlight-clipart-emoji-rain-and-sun-cloud.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.1/axios.min.js"
+        integrity="sha512-w9PRLSWbo+Yqin/AzSMGoP+qe8UF1njFtd1rEnR58Xv2GEJNEa6O6Bv53mkPbNyAwGCn1HVt1OOvd5i+E55t+w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js'
+        integrity='sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw=='
+        crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <div class="wrap">
+        <div class="inputContainer">
+            <img src="/img/845-8451388_sunlight-clipart-emoji-rain-and-sun-cloud.png" alt="">
+            <input type="text" id="city" placeholder="Lead the city" autocomplete="off">
+            <button id="search">Сheck the weather</button>
+        </div>
+        <div class="infoContainer">
+            <div class="infoItem">
+                <div class="valItem" id="nameCity"></div>
+                <div class="valItem" id="country"></div>
+            </div>
+            <div class="infoItem">
+                <div class="verticalContainer">
+                    <div class="nameItem">Actual</div>
+                    <div class="valItem" id="actualTemperatura"></div>
+                </div>
+                <div class="verticalContainer">
+                    <div class="nameItem">Feels like</div>
+                    <div class="valItem" id="feelsLikeTemperatura"></div>
+                </div>
+            </div>
+            <div class="infoItem">
+                <div class="nameItem">Weather</div>
+                <div class="valItem" id="weather"></div>
+            </div>
+            <div class="infoItem">
+                <div class="nameItem">Pressure</div>
+                <div class="valItem" id="tusk"></div>
+            </div>
+            <div class="infoItem">
+                <div class="nameItem">Humidity</div>
+                <div class="valItem" id="humidity"></div>
+            </div>
+            <div class="infoItem">
+                <div class="nameItem">Wind speed</div>
+                <div class="valItem" id="windSpeed"></div>
+            </div>
+            <div class="infoItem">
+                <div class="nameItem">Wind direction</div>
+                <div class="valItem" id="windDirection">
+                    <i class="fa-solid fa-arrow-up" id="windDeg"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
