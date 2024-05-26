@@ -3,6 +3,7 @@ $(`.infoContainer`).hide()
 
 $(`#search`).click(() => {
     let currentCity = $(`#city`).val();
+    // $(`#flagCountry`).remove();
 
     axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${currentCity}&appid=${KEY}`)
         .then(res => {
@@ -15,6 +16,7 @@ $(`#search`).click(() => {
             $(`#country`).text(res.data.sys.country);
             $(`#nameCity`).text(res.data.name);
             $(`#weather`).text(res.data.weather[0].description);
+            $(`#flagCountry`).css(`background-image`,`url(https://flagsapi.com/${res.data.sys.country}/flat/64.png)`);
 
             if (res.data.main.temp - 273 > 10){
                 $(`.wrap`).css(`background`, `linear-gradient(to bottom left, #ff7e5f, #feb47b)`);

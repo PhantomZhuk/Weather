@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  background-image: url();
 }
 
 .wrap {
@@ -95,6 +96,12 @@
 }
 .wrap .infoContainer .infoItem .verticalContainer .valItem {
   font-size: 24px;
+}
+.wrap .infoContainer .infoItem #flagCountry {
+  width: 65px;
+  height: 60px;
+  background-position: center;
+  background-size: cover;
 }
 .wrap .infoContainer .infoItem .valItem {
   font-size: 24px;
