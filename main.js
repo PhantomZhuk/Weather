@@ -37,6 +37,17 @@ let advArray = [{
 }
 ]
 
+$(`.cityPlaceholder`).click(() => {
+    $(`.cityPlaceholder`).css(`top`, `25px`);
+    $(`.cityPlaceholder`).css(`font-size`, `12px`);
+    $(`#city`).focus();
+})
+
+$(`#city`).blur(() => {
+    $(`.cityPlaceholder`).css(`top`, `58px`);
+    $(`.cityPlaceholder`).css(`font-size`, `14px`);
+});
+
 $(`#search`).click(() => {
     let currentCity = $(`#city`).val();
 
@@ -111,4 +122,6 @@ $(`#search`).click(() => {
     if ($(`#city`).val().length > 0) {
         $(`.infoContainer`).show();
     }
+
+    $(`#city`).val(``);
 });
