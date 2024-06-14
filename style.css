@@ -65,7 +65,7 @@
 .wrap .infoContainer {
   display: flex;
   width: 500px;
-  height: 400px;
+  min-height: 400px;
   background-color: green;
   border-radius: 20px;
   background: rgba(255, 255, 255, 0.2);
@@ -76,7 +76,30 @@
   align-items: center;
   color: #fff;
   transition: 1s;
-  padding: 40px 0;
+  padding: 40px 15px;
+}
+.wrap .infoContainer .AdviceContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.wrap .infoContainer .AdviceContainer .adviceBlock {
+  margin: 0 0 0 5px;
+  font-size: 18px;
+  width: 65%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.wrap .infoContainer .AdviceContainer .nameItem {
+  width: 35%;
+  margin-bottom: 5px;
+  font-size: 15px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 10px;
 }
 .wrap .infoContainer .infoItem {
   width: 100%;
@@ -92,10 +115,18 @@
 }
 .wrap .infoContainer .infoItem .verticalContainer .nameItem {
   margin-bottom: 5px;
-  font-size: 14px;
+  font-size: 15px;
 }
 .wrap .infoContainer .infoItem .verticalContainer .valItem {
   font-size: 24px;
+}
+.wrap .infoContainer .infoItem .countryCobtainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.wrap .infoContainer .infoItem .countryCobtainer div {
+  margin: 5px;
 }
 .wrap .infoContainer .infoItem #flagCountry {
   width: 65px;
@@ -114,6 +145,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.wrap .infoContainer hr {
+  width: 100%;
+  height: 2px;
+  margin: 10px 0;
+  border: 1px solid #fff;
+  opacity: 0.3;
 }
 
 @media screen and (max-width: 850px) {
