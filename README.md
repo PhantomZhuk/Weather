@@ -1,10 +1,4 @@
 # Weather
-### Contents
-- [Contents](#contents)
-- [Project Description](#project-description)
-- [Features](#features)
-- [Services and Libraries](#services-and-libraries)
-
 ### Project Description
 This project is the weather website.
 
