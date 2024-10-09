@@ -4,11 +4,6 @@ This project is the weather website.
 
 The main goal of this project is to provide a convenient platform for viewing the current weather, providing up-to-date information on temperature, precipitation, humidity, wind speed and other weather conditions in real time for a selected location.
 
-### Features
-+ Clean and simple interface: Easy to understand and use.
-+ Responsive design: The project is optimized for different devices and screen sizes.
-+ Provides advice on what to wear based on weather conditions.
-
 ### Services and Libraries
 + __[jquery](https://jquery.com/)__ - is a lightweight JavaScript library for easy interaction with HTML documents and event handling on websites.
 + __[Weather API](https://openweathermap.org/api)__ - is an interface that allows you to get current weather information, forecasts and other weather data.
